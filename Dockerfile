@@ -2,8 +2,6 @@ FROM adoptopenjdk/openjdk8:ubi
 
 WORKDIR /opt/app
 
-ARG JAR_FILE=target/HelloRESTful-0.0.1-SNAPSHOT.jar
+ARG LOCAL_FOLDER=./
 
-COPY ${JAR_FILE} app.jar
-
-ENTRYPOINT ["java", "-jar", "app.jar"]
+COPY ${LOCAL_FOLDER} restfulDocker
