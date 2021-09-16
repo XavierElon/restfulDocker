@@ -5,3 +5,6 @@ WORKDIR /opt/app
 ARG LOCAL_FOLDER=./
 
 COPY ${LOCAL_FOLDER} restfulDocker
+
+
+
